@@ -1,0 +1,206 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(/assets/fonts/Poppins/Poppins-Medium.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Poppins';
+
+    transition: all .2s ease;
+    scroll-behavior: smooth;
+
+    scroll-margin-top: 100px;
+}
+
+header {
+    background: linear-gradient(to left, rgba(128, 128, 128, 0.295), rgba(255, 255, 255, 0.658));
+    backdrop-filter: blur(10px);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    white-space: nowrap;
+
+    position: fixed;
+
+    top: 0;
+    width: 100%;
+    height: 100px;
+}
+
+.mainDiv {
+    width: 85%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+#left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 40%;
+    height: 100%;
+}
+
+#right-side {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+}
+
+ul {
+    list-style: inside;
+}
+nav ul {
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.link:hover {
+    color: green;
+}
+li a {
+    padding: 5px;
+}
+
+li {
+    border-radius: 20px;
+    transition: all .3s ease;
+
+    padding: 5px;
+}
+
+li:hover {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.205);
+    transform: scale(1.3);
+}
+
+#cursor {
+    font-size: 30px;
+    animation: cursor 1s infinite;
+}
+
+@keyframes cursor {
+
+    0%,
+    49% {
+        opacity: 1;
+    }
+
+    50%,
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+main {
+    padding: 150px 100px 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.anchoMain {
+    width: 70%;
+    padding: 10px;
+}
+
+.secciones {
+    display: flex;
+    flex-direction: column;
+
+    gap: 50px;
+}
+
+section {
+    padding-bottom: 50px;
+    border-bottom: 4px rgb(192, 192, 192) solid;
+
+    line-height: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.img {
+    width: 200px;
+    border-radius: 200px;
+}
+
+.imgYimenics {
+    width: 300px;
+    border-radius: 30px;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid black;
+
+    border-radius: 20px;
+}
+
+th {
+    background-color: rgb(173, 0, 0);
+    color: white;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+
+    text-align: center;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    padding: 30px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+
+
+
