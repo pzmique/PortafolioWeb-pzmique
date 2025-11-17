@@ -1,4 +1,4 @@
-const texto = "TP Integrador 2";
+const texto = "Portafolio de:";
 const textoEscrito = document.getElementById("name");
 const subtitle = document.getElementById("subtitle");
 
@@ -13,5 +13,6 @@ function typeWriter() {
         setTimeout(typeWriter, 100);
     }
 }
+
 
 typeWriter();
